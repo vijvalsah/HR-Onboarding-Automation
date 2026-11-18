@@ -1,0 +1,26 @@
+# --- Web ---
+fastapi>=0.115.0,<1.0.0
+uvicorn[standard]>=0.32.0,<1.0.0
+
+# --- Config ---
+pydantic[email]>=2.9.0,<3.0.0
+pydantic-settings>=2.6.0,<3.0.0
+python-dotenv>=1.0.0,<2.0.0
+
+# --- Auth ---
+python-jose[cryptography]>=3.3.0,<4.0.0
+bcrypt>=4.2.0,<6.0.0
+
+# --- Database & async ---
+sqlalchemy[asyncio]>=2.0.36,<3.0.0
+aiosqlite>=0.20.0,<1.0.0
+alembic>=1.14.0,<2.0.0
+# Postgres driver (used when DATABASE_URL points at Postgres):
+asyncpg>=0.30.0,<1.0.0
+
+# --- Documents ---
+reportlab>=4.2.0,<5.0.0
+
+# --- Workers (Stage 4+) ---
+# celery[redis]>=5.4.0,<6.0.0
+# redis>=5.2.0,<6.0.0
